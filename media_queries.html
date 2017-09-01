@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Media Queries</title>
+       <link rel="stylesheet" href="css/bootstrap.css">
+       <style>
+           .grey{
+               background-color: grey;
+               height: 800vh;
+               color: azure;
+           }
+           /* extra Small  xs */
+           @media (max-width: 575px){
+           .grey{
+               background-color: gold;
+               height: 800vh;
+               color: black;
+           }
+               }
+           /* Small sm */
+           @media (min-width: 576px) and (max-width: 767px){
+           .grey{
+               background-color:aqua;
+               height: 800vh;
+               color: black;
+           }
+               }
+           /* Medium  md */
+           @media (min-width: 768px) and (max-width: 991px){
+           .grey{
+               background-color:red;
+               height: 800vh;
+               color: black;
+           }
+               }
+           
+           /* large lg */
+           @media (min-width: 991px) and (max-width: 1199px){
+           .grey{
+               background-color:blueviolet;
+               height: 800vh;
+               color: black;
+           }
+               }
+            /* extra large xl */
+           @media (min-width: 1200px){
+           .grey{
+               background-color:palevioletred;
+               height: 800vh;
+               color: black;
+           }
+               }
+       </style>
+   </head>
+   <body>
+       <div class="container-fluid grey">
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+       </div>
+   </body>
+    
+</html>
