@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex_Property</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .mycontainer {
+            background-color: aqua;
+            height: 100vh;
+        }
+        
+        .mycol1 {
+            /*height: 100px;*/
+            background-color: bisque;
+        }
+        
+        .mycol2 {
+            /*height: 100px;*/
+            background-color: skyblue;
+        }
+        
+        .mycol {
+            /*height: 100px;*/
+            background-color: mediumpurple;
+        }
+        
+        .rowheight {
+            background-color: #000;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mycontainer">
+        <div class="row rowheight">
+            <div class="col-md-9 mycol1">
+                <div class="row rowheight">
+                    <div class="col-md-6 mycol1"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+                    <div class="col-md-6 mycol"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mycol2 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
