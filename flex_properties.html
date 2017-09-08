@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>flex row Property</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <style>
+            .myrow {
+                background-color: aquamarine;
+                height: 250px;
+            }
+            .mycol1{
+                background-color: gainsboro;
+                height: 150;
+            }
+            .mycol2{
+                background-color: antiquewhite;
+                height: 150;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<div class="row">Flex last and first Property</div>
+        <div class="row myrow">
+            <div class="col bg-primary flex-last"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col bg-success"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col bg-primary"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+        </div>
+        <div class="row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+        <div class="row myrow">
+            <div class="col mycol1 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col mycol2 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col mycol1 flex-first"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+        </div>
+        </div>
+    </body>
+</html>

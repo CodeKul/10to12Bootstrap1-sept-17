@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>flex colums Property</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <style>
+            .myrow {
+                background-color: aquamarine;
+                height: 250px;
+            }
+            .mycol1{
+                background-color: gainsboro;
+                height: 150;
+            }
+            .mycol2{
+                background-color: antiquewhite;
+                height: 150;
+            }
+            .mycol3{
+                background-color: forestgreen;
+                height: 150;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<div class="row">Flex colums Property</div>
+        <div class="row myrow flex-row">
+            <div class="col-md-2 bg-primary "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col-md-2 bg-success"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col-md-2 bg-danger"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+        </div>
+        <div class="row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+        <div class="row myrow flex-row-reverse">
+            <div class="col-md-2 mycol1 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col-md-2 mycol2 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </div>
+            <div class="col-md-2 mycol3 "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+        </div>
+        </div>
+    </body>
+</html>
