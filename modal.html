@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Modal Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Modal Demo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
+            <p>
+                <button type="button" data-target="#my_demo" data-toggle="modal" class="btn btn-success">Show Me</button>
+            </p>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#grid1">Primary Class</button>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#grid2">Danger Class</button>
+
+            </div>
+        </div>
+
+        <div class="modal" id="grid1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h3>Modal grid Demo</h3>
+                        </div>
+                        <button class="close" data-dismiss="modal" type="button">
+                        <span>&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <img src="images/p3.jpeg" height="250px" width="250px" class="rounded" />
+                        </div>
+                        <div class="row">
+                            <button type="button" data-target="#nestmodal" data-toggle="modal" class="btn btn-warning btn-lg" id="myid">Nested Modal</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="close">Canel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="nestmodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h3>Nested Modal</h3>
+                        </div>
+                        <button class="close" data-dismiss="modal" type="button">
+                        <span>&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <img src="images/p3.jpeg" height="250px" width="250px" class="rounded" />
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" id="last_modal">First Modal</button>
+                        <button type="button" data-dismiss="modal" class="close">Canel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="grid2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h3>Nested Grid</h3>
+                        </div>
+                        <button class="close" data-dismiss="modal" type="button">
+                        <span>&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                           <div class="form-group">
+                            <div class="row">
+                               
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+            
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="row">
+                               
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+                                
+                                
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control">
+                                </div>
+            
+                            </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" id="last_modal">First Modal</button>
+                        <button type="button" data-dismiss="modal" class="close">Canel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="modal fade bd-example-modal-sm" id="my_demo" data-backdrop="static" data-keyboard="false" data-focus="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h3> Modal Demo </h3>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body modal-open">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium</p>
+                        <img src="images/p1.jpeg" class="rounded-circle" height="250px" width="250px" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+<script>
+    $('#myid').click(function() {
+        $('#grid1').modal('hide');
+    })
+</script>
+<script>
+    $('#last_modal').click(function() {
+        $('#my_demo').modal('show');
+    })
+</script>
+
+</html>
