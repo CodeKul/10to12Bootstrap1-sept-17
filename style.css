@@ -1,0 +1,263 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 550px;
+    width:100%;
+    background: url('images/s2.png')no-repeat center center fixed;
+    background-size:cover;
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: overlay;
+}
+
+.header-link a {
+    border-radius: 30px;
+}
+
+.custom-nav{
+    background-color: rgba(0,0,0,0.0)!important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+#intro,
+#circle_section,
+#shop,
+#price-table,
+#phones,
+#counter
+{
+    margin-top: 50px;
+    padding: 40px, 0px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 10px inset #ffc107;
+    display: inline-block;
+    border-radius: 100%;
+    color: #ffc107;
+    transition: 1s;
+}
+
+.circle:hover {
+    transform: rotate(360deg);
+}
+
+#shop {
+    background: url('https://static.pexels.com/photos/326240/pexels-photo-326240.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.cd-img {
+    width: 100%;
+    height: 300px;
+}
+
+.c-card {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.new {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: bold;
+    background-color: blue;
+    transition: 1s;
+}
+
+.new:hover {
+    right: 30px;
+}
+
+#price-table {
+    background: url('https://static.pexels.com/photos/247685/pexels-photo-247685.png')no-repeat center center fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+
+}
+
+.second-price {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: -20px;
+    z-index: 1;
+    border-radius: 5px! important;
+}
+
+#price-table.card {
+    border: 0px;
+}
+
+.card-header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.mobile {
+    height: 450px;
+    width: 250px;
+    border-top: 50px solid #fff;
+    border-left: 12px solid #fff;
+    border-right: 12px solid #fff;
+    border-bottom: 50px solid #fff;
+    background: url('https://static.pexels.com/photos/357872/pexels-photo-357872.jpeg');
+    background-size: 100% 100%;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mobile::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px outset #000;
+    border-radius: 100%;
+    bottom: -40px;
+    left: 43%;
+}
+
+.mobile::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    border-radius: 10%;
+    top: -30px;
+    left: 43%;
+    background-color: #ccc;
+}
+
+.tablet {
+    height: 460px;
+    width: 100%;
+    border-top: 25px solid #fff;
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+    border-bottom: 25px solid #fff;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tablet::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px outset #000;
+    border-radius: 100%;
+    bottom: 180px;
+    left: -6.5%;
+    position: absolute;
+}
+
+.tablet::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    border-radius: 10%;
+    top: 180px;
+    left: 103%;
+    background-color: #ccc;
+}
+
+#counter {
+    background: url('https://static.pexels.com/photos/443428/pexels-photo-443428.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 0px;
+}
+
+#our-team {
+    background: url('https://static.pexels.com/photos/53958/team-motivation-teamwork-together-53958.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    padding: 50px 0px;
+}
+
+#our-team .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+#our-team .card .myimg {
+    position: absolute;
+    left: 30%;
+    top: -35px;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    border: 2px outset #eee;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: orange;
+    color: #fff;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: silver;
+    color: #fff;
+    transform: rotate(-27deg);
+}
+
+.chat{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.chat .card-body{
+    display:none;
+}
+
+.fa-comment-o:hover{
+    cursor: pointer;
+}
+
+.shrink{
+    background: #2c3e50!important;
+}
+
+.custom-nav1{
+    background:#000;
+}
+
+@media(max-width:500px){
+    header{
+        height: auto;
+        padding: 50px 0px;
+    }
+}
